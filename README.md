@@ -11,15 +11,28 @@ Background: Railway stations are complex environments with numerous facilities a
 Ministry of Railway
 
 ## Idea
-
-
+Hybrid Navigation Engine Using  GPS and routing API
+Platform Phase: Switches to an indoor positioning system (IPS) using a combination of Wi-Fi and Sensor Fusion (Pedestrian Dead Reckoning - PDR).
 ## Proposed Solution / Architecture Diagram
+**1**  Outdoor Phase: Uses traditional GPS and standard routing APIs to guide the user from their current location to the correct railway station entrance.
+
+**2**  Platform Phase: Switches to an indoor positioning system (IPS) using a combination of Wi-Fi and Sensor Fusion (Pedestrian Dead Reckoning - PDR).
+
+**3**  Dynamic Guidance Engine: Maps out the exact multi-floor path (e.g., ground floor ticket counter $\rightarrow$ escalator $\rightarrow$ foot overbridge $\rightarrow$ Platform 3) paired with real-time voice guidance synchronized with live Indian Railways train arrival/delay data.
 
 
 ## Use Cases
 
+**1**   **Inter-Modal Navigation to Exact Platforms:**
+
+The app calculates the route, factoring in current security queue wait times, directs them through the nearest gate, up the elevator to the correct Foot Overbridge (FOB), and guides them straight to Platform
+
+**2**   **Real-time Platform Change Alerts:**
+
+The app receives live feed updates via NTES (National Train Enquiry System) or station display scraping, instantly alters the indoor route mid-journey, and updates the voice prompt
 
 ## Technology Stack
 
+he app receives live feed updates via NTES (National Train Enquiry System) or station display scraping, instantly alters the indoor route mid-journey, and updates the voice prompt
 
 ## Dependencies
