@@ -36,9 +36,45 @@ The app receives live feed updates via NTES (National Train Enquiry System) or s
 
 ## Technology Stack
 
-<img width="741" height="712" alt="image" src="https://github.com/user-attachments/assets/840b3e97-471e-40fe-a80f-7ea48be3f445" />
+Technology Stack
 
+Technology Stack
 
+1. Mobile Application
+
+Technologies: Flutter (Dart), Kotlin, Swift
+
+Purpose: Provides a cross-platform user interface and handles background location services and audio triggers.
+
+2. Indoor Positioning System (IPS)
+
+Technologies: CoreLocation (iOS), Android BLE Beacon APIs, Wi-Fi RTT (Round Trip Time)
+
+Purpose: Tracks the user's location inside buildings and railway stations where GPS signals are weak or unavailable.
+
+3. Backend and Routing
+
+Technologies: Node.js (Express) or Python (FastAPI), PostgreSQL, PostGIS
+
+Purpose: Manages station spatial databases, node-edge graphs, route calculations, and API gateways.
+
+4. Indoor Mapping and Rendering
+
+Technologies: Mapbox Maps SDK or OpenLayers with custom GeoJSON
+
+Purpose: Displays multi-floor station maps, including staircases, lifts, and platforms.
+
+5. Voice and Text-to-Speech
+
+Technologies: Native TTS (AVSpeechSynthesizer / TextToSpeech) or ElevenLabs API
+
+Purpose: Provides context-aware, turn-by-turn audio directions, with offline support where available.
+
+6. Live Transit Data
+
+Technologies: RailYatri API, IRCTC / NTES data services
+
+Purpose: Retrieves train schedules, platform allocations, and delay information, depending on API availability.
 
 ## Dependencies
 
